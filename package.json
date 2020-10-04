@@ -13,7 +13,18 @@
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/make-executable.git"
   },
-  "keywords": [],
+  "keywords": [
+    "make",
+    "executable",
+    "set",
+    "bits",
+    "chmod",
+    "x",
+    "+x",
+    "fs",
+    "fs-safe",
+    "safe"
+  ],
   "files": [
     "build"
   ],
