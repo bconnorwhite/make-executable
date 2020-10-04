@@ -60,6 +60,7 @@ function makeExecutableSync(path: string): boolean | undefined;
 
 ## Related Packages
 
+- [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
 - [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
 - [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files, and parent directories if necessary
 - [remove-file-safe](https://www.npmjs.com/package/remove-file-safe): Remove a file without try catch
