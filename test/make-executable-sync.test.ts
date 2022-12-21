@@ -9,7 +9,7 @@ beforeEach(async () => {
   mock({
     "/test": {
       "dir": {},
-      "note.md": "hello world!"
+      "file.js": "console.log('hello');"
     },
     "/no-access": directory({
       mode: 0,
@@ -25,14 +25,13 @@ afterEach(async () => {
 });
 
 test("make executable", async () => {
-  expect(makeExecutableSync("/test/note.md")).toBe(true);
-  return promises.stat("/test/note.md").then((stats) => {
-    expect(stats.mode & getExecutableMode()).toBe(getExecutableMode());
-  });
+  expect(makeExecutableSync("/test/file.js")).toBe(true);
+  const stats = await promises.stat("/test/file.js");
+  expect(stats.mode & getExecutableMode()).toBe(getExecutableMode());
 });
 
 test("make executable no exists", () => {
-  expect(makeExecutableSync("/test/nope.md")).toBe(false);
+  expect(makeExecutableSync("/test/does-not-exist.js")).toBe(false);
 });
 
 test("make executable no access", () => {

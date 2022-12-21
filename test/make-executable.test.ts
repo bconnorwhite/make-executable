@@ -9,7 +9,7 @@ beforeEach(async () => {
   mock({
     "/test": {
       "dir": {},
-      "note.md": "hello world!"
+      "file.js": "console.log('hello');"
     },
     "/no-access": directory({
       mode: 0,
@@ -25,16 +25,16 @@ afterEach(async () => {
 });
 
 test("make executable", async () => {
-  return makeExecutable("/test/note.md").then(async (result) => {
+  return makeExecutable("/test/file.js").then(async (result) => {
     expect(result).toBe(true);
-    return promises.stat("/test/note.md").then((stats) => {
+    return promises.stat("/test/file.js").then((stats) => {
       expect(stats.mode & getExecutableMode()).toBe(getExecutableMode());
     });
   });
 });
 
 test("make executable no exists", async () => {
-  return makeExecutable("/test/nope.md").then(async (result) => {
+  return makeExecutable("/test/does-not-exist.js").then(async (result) => {
     expect(result).toBe(false);
   });
 });

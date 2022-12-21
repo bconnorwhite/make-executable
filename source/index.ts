@@ -1,8 +1,8 @@
-import { promises, chmodSync, constants } from "fs";
+import { promises, chmodSync, constants, statSync } from "fs";
 
-export function getExecutableMode() {
+export function getExecutableMode(mode = 0) {
   // eslint-disable-next-line no-bitwise
-  return constants.S_IXUSR | constants.S_IXGRP | constants.S_IXOTH;
+  return mode | constants.S_IXUSR | constants.S_IXGRP | constants.S_IXOTH;
 }
 
 function handleError(err: any) {
@@ -14,16 +14,19 @@ function handleError(err: any) {
 }
 
 export async function makeExecutable(path: string) {
-  return promises.chmod(path, getExecutableMode()).then(() => {
+  try {
+    const stats = await promises.stat(path);
+    await promises.chmod(path, getExecutableMode(stats.mode));
     return true;
-  }).catch((err) => {
+  } catch(err) {
     return handleError(err);
-  });
+  }
 }
 
 export function makeExecutableSync(path: string) {
   try {
-    chmodSync(path, getExecutableMode());
+    const stats = statSync(path);
+    chmodSync(path, getExecutableMode(stats.mode));
     return true;
   } catch(err) {
     return handleError(err);
