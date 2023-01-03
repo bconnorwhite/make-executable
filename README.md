@@ -1,25 +1,35 @@
-<div align="center">
+<!-- auto header start -->
+<div id="top" align="center">
   <h1>make-executable</h1>
   <a href="https://npmjs.com/package/make-executable">
-    <img alt="NPM" src="https://img.shields.io/npm/v/make-executable.svg">
+    <img alt="npm" src="https://img.shields.io/npm/v/make-executable.svg">
   </a>
   <a href="https://github.com/bconnorwhite/make-executable">
-    <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/make-executable.svg">
+    <img alt="typescript" src="https://img.shields.io/github/languages/top/bconnorwhite/make-executable.svg">
   </a>
   <a href='https://coveralls.io/github/bconnorwhite/make-executable?branch=master'>
     <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/make-executable.svg?branch=master">
-  </a>
-  <a href="https://github.com/bconnorwhite/make-executable">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/make-executable?label=Stars%20Appreciated%21&style=social">
-  </a>
-  <a href="https://twitter.com/bconnorwhite">
-    <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
   </a>
 </div>
 
 <br />
 
-> Set the executable bits on a file.
+<blockquote align="center">Set the executable bits on a file</blockquote>
+
+<br />
+
+_If I should maintain this repo, please ⭐️_
+<a href="https://github.com/bconnorwhite/make-executable">
+  <img align="right" alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/make-executable?label=%E2%AD%90%EF%B8%8F&style=social">
+</a>
+
+_DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or suggestions._
+<a href="https://twitter.com/bconnorwhite">
+  <img align="right" alt="Twitter Follow" src="https://img.shields.io/twitter/url?label=%40bconnorwhite&style=social&url=https%3A%2F%2Ftwitter.com%2Fbconnorwhite">
+</a>
+
+---
+<!-- auto header end -->
 
 ## Installation
 
@@ -41,22 +51,24 @@ function makeExecutable(path: string): Promise<boolean | undefined>;
 function makeExecutableSync(path: string): boolean | undefined;
 ```
 
+<!-- auto footer start -->
+
 <br />
 
-<h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/make-executable.svg"></h2>
+<h2>Dev Dependencies</h2>
 
-- [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
 - [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): TypeScript definitions for mock-fs
 - [@types/node](https://www.npmjs.com/package/@types/node): TypeScript definitions for Node.js
+- [autorepo](https://www.npmjs.com/package/autorepo): Autorepo abstracts away your dev dependencies, providing a single command to run all of your scripts.
 - [mock-fs](https://www.npmjs.com/package/mock-fs): A configurable mock file system.  You know, for testing.
 
+
 <br />
 
-<h2>License <img align="right" alt="license" src="https://img.shields.io/npm/l/make-executable.svg"></h2>
+<h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/make-executable.svg"></a></h2>
 
 [MIT](https://opensource.org/licenses/MIT)
-
-<br />
+<!-- auto footer end -->
 
 ## Related Packages
 

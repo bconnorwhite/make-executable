@@ -2,13 +2,11 @@
   "name": "make-executable",
   "version": "1.0.2",
   "description": "Set the executable bits on a file",
+  "main": ".auto/build/index.js",
+  "author": "Connor White",
   "license": "MIT",
-  "author": {
-    "name": "Connor White",
-    "email": "connor.bcw@gmail.com",
-    "url": "https://connorwhite.org"
-  },
-  "homepage": "https://connorwhite.org/github/make-executable",
+  "private": false,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/make-executable.git"
@@ -25,33 +23,30 @@
     "fs-safe",
     "safe"
   ],
+  "exports": "./.auto/build/index.js",
+  "types": ".auto/build/index.d.ts",
   "files": [
-    "build"
+    ".auto/build/**/!(tsconfig.tsbuildinfo)"
   ],
-  "main": "./build/index.js",
   "scripts": {
-    "build": "bob build",
-    "commit": "bob commit",
-    "lint": "bob lint",
-    "release": "bob publish",
-    "test": "bob test"
+    "build": "auto build",
+    "lint": "auto lint",
+    "release": "yarn version",
+    "test": "auto test"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.9.2",
     "@types/mock-fs": "^4.10.0",
     "@types/node": "^14.11.2",
+    "autorepo": "^0.1.1",
     "mock-fs": "^4.13.0"
   },
   "eslintConfig": {
-    "extends": "eslint-config-bob"
+    "extends": "@autosoft/eslint-config"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "bob lint commit"
-    }
+  "jest": {
+    "preset": "@autosoft/jest-preset"
   },
   "npmpackagejsonlint": {
-    "extends": "npm-package-json-lint-config-bob"
+    "extends": "npm-package-json-lint-config-auto"
   }
 }

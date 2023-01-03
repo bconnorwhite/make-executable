@@ -1,7 +1,6 @@
 import { promises, chmodSync, constants, statSync } from "fs";
 
 export function getExecutableMode(mode = 0) {
-  // eslint-disable-next-line no-bitwise
   return mode | constants.S_IXUSR | constants.S_IXGRP | constants.S_IXOTH;
 }
 

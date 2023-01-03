@@ -1,6 +1,7 @@
 {
-  "extends": "@bconnorwhite/bob",
+  "extends": "@autosoft/tsconfig",
   "compilerOptions": {
+    "outDir": ".auto/build",
     "rootDirs": [
       "source",
       "types"
@@ -11,7 +12,6 @@
     ]
   },
   "include": [
-    "source",
-    "types"
+    "source/index.ts"
   ]
 }
