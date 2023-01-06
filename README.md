@@ -74,6 +74,8 @@ function makeExecutableSync(path: string): boolean | undefined;
 [MIT](https://opensource.org/licenses/MIT)
 <!--END FOOTER-->
 
+<br />
+
 ## Related Packages
 
 - [fs-safe](https://www.npmjs.com/package/fs-safe): A simple fs wrapper that doesn't throw
