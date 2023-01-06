@@ -10,6 +10,7 @@
   <a href='https://coveralls.io/github/bconnorwhite/make-executable?branch=master'>
     <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/make-executable.svg?branch=master">
   </a>
+  <img alt="Platform: Universal" src="https://img.shields.io/badge/Universal-%233178C6?logo=javascript&logoColor=white" />
 </div>
 
 <br />
@@ -33,17 +34,36 @@ _DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or s
 
 ## Installation
 
+<details open>
+  <summary>
+    <img  src="https://img.shields.io/badge/yarn-2C8EBB?logo=yarn&logoColor=white" alt="Yarn" />
+  </summary>
+
 ```sh
 yarn add make-executable
 ```
+
+</details>
+<details open>
+  <summary>
+    <img src="https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=white" alt="NPM" />
+  </summary>
 
 ```sh
 npm install make-executable
 ```
 
+</details>
+<details open>
+  <summary>
+    <img src="https://img.shields.io/badge/pnpm-F69220?logo=pnpm&logoColor=white" alt="PNPM" />
+  </summary>
+
 ```sh
 pnpm add make-executable
 ```
+
+</details>
 
 ## API
 
@@ -71,7 +91,7 @@ function makeExecutableSync(path: string): boolean | undefined;
 
 <h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/make-executable.svg"></a></h2>
 
-[MIT](https://opensource.org/licenses/MIT)
+[MIT](https://opensource.org/licenses/MIT) - _The MIT License_
 <!--END FOOTER-->
 
 <br />
