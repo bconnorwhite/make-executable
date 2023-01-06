@@ -38,7 +38,7 @@
   "devDependencies": {
     "@types/mock-fs": "^4.10.0",
     "@types/node": "^14.11.2",
-    "autorepo": "^0.1.1",
+    "autorepo": "^0.1.2",
     "mock-fs": "^4.13.0"
   },
   "eslintConfig": {
