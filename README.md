@@ -79,7 +79,7 @@ function makeExecutableSync(path: string): boolean | undefined;
 
 <br />
 
-<h2>Dev Dependencies</h2>
+<h2>Dev Dependencies<a href="https://www.npmjs.com/package/make-executable?activeTab=dependencies"><img align="right" alt="dependencies" src="https://img.shields.io/librariesio/release/npm/make-executable.svg"></a></h2>
 
 - [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): TypeScript definitions for mock-fs
 - [@types/node](https://www.npmjs.com/package/@types/node): TypeScript definitions for Node.js
