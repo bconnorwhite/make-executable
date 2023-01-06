@@ -65,7 +65,7 @@ pnpm add make-executable
 
 </details>
 
-## API
+## Usage
 
 ```ts
 import { makeExecutable, makeExecutableSync } from "make-executable";
