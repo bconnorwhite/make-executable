@@ -31,7 +31,8 @@
   "scripts": {
     "build": "auto build",
     "lint": "auto lint",
-    "release": "yarn version",
+    "prepack": "yarn build",
+    "release": "auto release",
     "test": "auto test"
   },
   "devDependencies": {
