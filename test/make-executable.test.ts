@@ -1,9 +1,7 @@
-/* eslint-disable no-bitwise */
-import { beforeEach, test } from "@jest/globals";
+import { beforeEach, afterEach, expect, test } from "@jest/globals";
 import mock, { restore, directory } from "mock-fs";
 import { promises } from "fs";
 import { makeExecutable, getExecutableMode } from "../source";
-
 
 beforeEach(async () => {
   mock({
