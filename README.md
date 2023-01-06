@@ -1,4 +1,4 @@
-<!-- auto header start -->
+<!--BEGIN HEADER-->
 <div id="top" align="center">
   <h1>make-executable</h1>
   <a href="https://npmjs.com/package/make-executable">
@@ -14,7 +14,7 @@
 
 <br />
 
-<blockquote align="center">Set the executable bits on a file</blockquote>
+<blockquote align="center">Set the executable bits on a file.</blockquote>
 
 <br />
 
@@ -29,7 +29,7 @@ _DM me on [Twitter](https://twitter.com/bconnorwhite) if you have questions or s
 </a>
 
 ---
-<!-- auto header end -->
+<!--END HEADER-->
 
 ## Installation
 
@@ -39,6 +39,10 @@ yarn add make-executable
 
 ```sh
 npm install make-executable
+```
+
+```sh
+pnpm add make-executable
 ```
 
 ## API
@@ -51,7 +55,7 @@ function makeExecutable(path: string): Promise<boolean | undefined>;
 function makeExecutableSync(path: string): boolean | undefined;
 ```
 
-<!-- auto footer start -->
+<!--BEGIN FOOTER-->
 
 <br />
 
@@ -68,7 +72,7 @@ function makeExecutableSync(path: string): boolean | undefined;
 <h2 id="license">License <a href="https://opensource.org/licenses/MIT"><img align="right" alt="license" src="https://img.shields.io/npm/l/make-executable.svg"></a></h2>
 
 [MIT](https://opensource.org/licenses/MIT)
-<!-- auto footer end -->
+<!--END FOOTER-->
 
 ## Related Packages
 
