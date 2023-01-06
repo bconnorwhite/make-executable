@@ -1,6 +1,7 @@
 <!--BEGIN HEADER-->
 <div id="top" align="center">
   <h1>make-executable</h1>
+  <img alt="Platform: Node" src="https://img.shields.io/badge/Node-%23339933?logo=node.js&logoColor=white" />
   <a href="https://npmjs.com/package/make-executable">
     <img alt="npm" src="https://img.shields.io/npm/v/make-executable.svg">
   </a>
@@ -10,7 +11,6 @@
   <a href='https://coveralls.io/github/bconnorwhite/make-executable?branch=master'>
     <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/make-executable.svg?branch=master">
   </a>
-  <img alt="Platform: Universal" src="https://img.shields.io/badge/Universal-%233178C6?logo=javascript&logoColor=white" />
 </div>
 
 <br />
