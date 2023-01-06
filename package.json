@@ -1,6 +1,6 @@
 {
   "name": "make-executable",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Set the executable bits on a file",
   "main": ".auto/build/index.js",
   "author": "Connor White",
